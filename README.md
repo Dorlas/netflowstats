@@ -22,7 +22,7 @@ On Mikrotik:
 On FreeBSD:
 
 <code>
-  pkg install flow-tools
+pkg install flow-tools
   
   echo 'flow_capture_enable="YES"' >> /etc/rc.conf.local
   
@@ -40,19 +40,19 @@ On FreeBSD:
   
   pkg install p5-DBI p5-DBD-mysql
   
-  mysql -u root -p
+mysql -u root -p
 </code>
 
 On MySQL:
 
 <code>
-  mysql> create database netflow;
+mysql> create database netflow;
   
   mysql> grant insert,create,update,select,delete on netflow.* to nfuser@'localhost' identified by '987654321';
   
   mysql> flush privileges;
   
-  mysql> exit;
+mysql> exit;
 </code>
 
 
