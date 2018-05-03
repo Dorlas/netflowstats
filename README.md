@@ -56,11 +56,11 @@ mysql> exit;
 
 ## Script usage: ##
 
-**netflow.pl** - near end of a day (like 23:50). Script parse all ft-* files from flow-capture.
+**netflow.pl** - near end of a day (like 23:50). Script parse all ft-* files from flow-capture to MySQL.
 
 **netflow.php** - use it with WebServer + PHP 5.x, 7.x + phpX-mysqli.
 
-**netflow_compress_db.pl** - use it on first day in a new mounth to compress last mounth and sort index (to make future SQL-queue more fast).
+**netflow_compress_db.pl** - use it on first day in a new month to compress last month and sort index (to make future SQL-queue more fast).
 
 ## PHP UI Examples ##
 
