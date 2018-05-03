@@ -7,7 +7,7 @@ Next with PHP UI you can easy parse SQL DB per month statictics and view some qu
 
 Example: Fast Start use scripts with FreeBSD + MySQL + Mikrotik NetFlow v5:
 
-On Mikrotik:
+**On Mikrotik:**
 
 /ip traffic-flow
   
@@ -18,7 +18,8 @@ set enabled=yes interfaces=WAN
 add dst-address=X.X.X.X port=8787 v9-template-timeout=1m version=5
 
 
-On FreeBSD:
+
+**On FreeBSD:**
 
 pkg install flow-tools
   
@@ -41,17 +42,10 @@ pkg install flow-tools
 mysql -u root -p
 
 
-On MySQL:
-
-
+**On MySQL:**
 mysql> create database netflow;
-  
-  mysql> grant insert,create,update,select,delete on netflow.* to nfuser@'localhost' identified by '987654321';
-  
-  mysql> flush privileges;
-  
+mysql> grant insert,create,update,select,delete on netflow.* to nfuser@'localhost' identified by '987654321';
+mysql> flush privileges;
 mysql> exit;
 
 
-
-  
