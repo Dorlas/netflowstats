@@ -11,9 +11,11 @@ On Mikrotik:
 
 <code>
 /ip traffic-flow
+
 set enabled=yes interfaces=WAN
 
 /ip traffic-flow target
+
 add dst-address=<NAS IP Address> port=8787 v9-template-timeout=1m version=5
 </code>
 
