@@ -5,6 +5,7 @@ This project can be used to capture, parse and load NetFlow statictics from
 any NetFlow v5 compatibility Device (Like Mikrotik and etc) to MySQL Database.
 Next with PHP UI you can easy parse SQL DB per month statictics and view some queryes.
 
+
 Example: Fast Start use scripts with FreeBSD + MySQL + Mikrotik NetFlow v5:
 
 **On Mikrotik:**
@@ -43,9 +44,20 @@ mysql -u root -p
 
 
 **On MySQL:**
+
 mysql> create database netflow;
+
 mysql> grant insert,create,update,select,delete on netflow.* to nfuser@'localhost' identified by '987654321';
+
 mysql> flush privileges;
+
 mysql> exit;
 
 
+Script usage:
+
+**netflow.pl** - near end of a day (like 23:50). Script parse all ft-* files from flow-capture.
+
+**netflow.php** - use it with WebServer + PHP 5.x, 7.x + phpX-mysqli.
+
+**netflow_compress_db.pl** - use it on first day in a new mounth to compress last mounth and sort index (to make future SQL-queue more fast).
