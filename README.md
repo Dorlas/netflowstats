@@ -9,19 +9,17 @@ Example: Fast Start use scripts with FreeBSD + MySQL + Mikrotik NetFlow v5:
 
 On Mikrotik:
 
-'
-  /ip traffic-flow
+/ip traffic-flow
   
-  set enabled=yes interfaces=WAN
+set enabled=yes interfaces=WAN
   
-  /ip traffic-flow target
+/ip traffic-flow target
   
-  add dst-address=X.X.X.X port=8787 v9-template-timeout=1m version=5
-'
+add dst-address=X.X.X.X port=8787 v9-template-timeout=1m version=5
+
 
 On FreeBSD:
 
-<code>
 pkg install flow-tools
   
   echo 'flow_capture_enable="YES"' >> /etc/rc.conf.local
@@ -41,11 +39,11 @@ pkg install flow-tools
   pkg install p5-DBI p5-DBD-mysql
   
 mysql -u root -p
-</code>
+
 
 On MySQL:
 
-<code>
+
 mysql> create database netflow;
   
   mysql> grant insert,create,update,select,delete on netflow.* to nfuser@'localhost' identified by '987654321';
@@ -53,7 +51,7 @@ mysql> create database netflow;
   mysql> flush privileges;
   
 mysql> exit;
-</code>
+
 
 
   
