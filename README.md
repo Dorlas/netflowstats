@@ -61,3 +61,16 @@ Script usage:
 **netflow.php** - use it with WebServer + PHP 5.x, 7.x + phpX-mysqli.
 
 **netflow_compress_db.pl** - use it on first day in a new mounth to compress last mounth and sort index (to make future SQL-queue more fast).
+
+## PHP UI Examples ##
+
+![Start1](https://github.com/Dorlas/netflowstats/blob/master/php_screens/Start1.png)
+
+![Start2](https://github.com/Dorlas/netflowstats/blob/master/php_screens/Start2.png)
+
+![Start3](https://github.com/Dorlas/netflowstats/blob/master/php_screens/Start3.png)
+
+![Start4](https://github.com/Dorlas/netflowstats/blob/master/php_screens/Start4.png)
+
+![Start5](https://github.com/Dorlas/netflowstats/blob/master/php_screens/Start5.png)
+
