@@ -10,13 +10,13 @@ Example: Fast Start use scripts with FreeBSD + MySQL + Mikrotik NetFlow v5:
 On Mikrotik:
 
 <code>
-/ip traffic-flow
 
+/ip traffic-flow
 set enabled=yes interfaces=WAN
 
 /ip traffic-flow target
+add dst-address=X.X.X.X port=8787 v9-template-timeout=1m version=5
 
-add dst-address=<NAS IP Address> port=8787 v9-template-timeout=1m version=5
 </code>
 
 
