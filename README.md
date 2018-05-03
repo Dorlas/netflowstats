@@ -8,6 +8,7 @@ Next with PHP UI you can easy parse SQL DB per month statictics and view some qu
 Example: Fast Start use scripts with FreeBSD + MySQL + Mikrotik NetFlow v5:
 
 On Mikrotik:
+
 <code>
 /ip traffic-flow
 set enabled=yes interfaces=WAN
