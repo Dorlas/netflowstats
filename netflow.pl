@@ -56,6 +56,9 @@ my $seconds3;
 if ($mounth < "10") {
         $mounth2 = "0"."$mounth";
         }
+        else {
+        $mounth2 = $mounth;
+}
 
 if ($mday < "10") {
         $mday2 = "0"."$mday";
